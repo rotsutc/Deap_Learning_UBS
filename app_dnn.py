@@ -28,7 +28,7 @@ try:
     scaler = joblib.load("scaler.pkl")
     model_loaded = True
 except Exception as e:
-    st.error("❌ Không thể tải mô hình hoặc scaler. Vui lòng kiểm tra file 'DNN_BatchNormalization_bond_strength_model.keras' và 'scaler.pkl'. Chi tiết lỗi: {e}"")
+    st.error("❌ Không thể tải mô hình hoặc scaler. Vui lòng kiểm tra file 'DNN_BatchNormalization_bond_strength_model.keras' và 'scaler.pkl'. Chi tiết lỗi: {e}")
     model_loaded = False
 
 # =========================
@@ -98,4 +98,5 @@ st.markdown("""
 Toàn bộ dữ liệu chỉ sử dụng cho mục đích học tập và nghiên cứu.
 </div>
 """, unsafe_allow_html=True)
+
 
